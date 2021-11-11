@@ -24,14 +24,14 @@ namespace PRC391_Assignment2
         {
             services.AddControllersWithViews();
             //Add services for Dynamo DB
-            var credentials = new BasicAWSCredentials("AKIAVBZKJINZSXS2KQBW", "E1RKVnUZVMfV+7fLLLM78vL1/vBmzh/YGyXyrM7m");
-            var config = new AmazonDynamoDBConfig()
-            {
-                RegionEndpoint = RegionEndpoint.USEast2
-            };
-            var client = new AmazonDynamoDBClient(credentials, config);
-            services.AddSingleton<IAmazonDynamoDB>(client);
-            services.AddSingleton<IDynamoDBContext, DynamoDBContext>();
+            //var credentials = new BasicAWSCredentials("AKIAVBZKJINZSXS2KQBW", "E1RKVnUZVMfV+7fLLLM78vL1/vBmzh/YGyXyrM7m");
+            //var config = new AmazonDynamoDBConfig()
+            //{
+            //    RegionEndpoint = RegionEndpoint.USEast2
+            //};
+            //var client = new AmazonDynamoDBClient(credentials, config);
+            //services.AddSingleton<IAmazonDynamoDB>(client);
+            //services.AddSingleton<IDynamoDBContext, DynamoDBContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
